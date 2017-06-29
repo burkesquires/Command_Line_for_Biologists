@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generated-by" content="Markdown PRO, http://markdownpro.com"/>
+<title></title>
+<style type="text/css">
+html,body{margin:0;padding:0;}
+body {padding: 20px}
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit;}
+table{border-collapse:collapse;border-spacing:0;}
+ol,ul{list-style:none;}
+q:before,q:after,blockquote:before,blockquote:after{content:"";}
+html{overflow-y:scroll;font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+a:focus{outline:thin dotted;}
+a:hover,a:active{outline:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+audio:not([controls]){display:none;}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+img{border:0;-ms-interpolation-mode:bicubic;}
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}
+button,input{line-height:normal;*overflow:visible;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;}
+input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}
+input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}
+textarea{overflow:auto;vertical-align:top;}
+html,body{background-color:#ffffff;}
+body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:18px;color:#404040;}
+.container{width:940px;margin-left:auto;margin-right:auto;zoom:1;}.container:before,.container:after{display:table;content:"";zoom:1;*display:inline;}
+.container:after{clear:both;}
+.container-fluid{position:relative;min-width:940px;padding-left:20px;padding-right:20px;zoom:1;}.container-fluid:before,.container-fluid:after{display:table;content:"";zoom:1;*display:inline;}
+.container-fluid:after{clear:both;}
+.container-fluid>.sidebar{float:left;width:220px;}
+.container-fluid>.content{margin-left:240px;}
+a{color:#0069d6;text-decoration:none;line-height:inherit;font-weight:inherit;}a:hover{color:#00438a;text-decoration:underline;}
+.pull-right{float:right;}
+.pull-left{float:left;}
+.hide{display:none;}
+.show{display:block;}
+.row{zoom:1;margin-left:-20px;}.row:before,.row:after{display:table;content:"";zoom:1;*display:inline;}
+.row:after{clear:both;}
+p{font-size:13px;font-weight:normal;line-height:18px;margin-bottom:9px;}p small{font-size:11px;color:#bfbfbf;}
+h1,h2,h3,h4,h5,h6{font-weight:bold;color:#404040;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{color:#bfbfbf;}
+h1{margin-bottom:18px;font-size:30px;line-height:36px;}h1 small{font-size:18px;}
+h2{font-size:24px;line-height:36px;}h2 small{font-size:14px;}
+h3,h4,h5,h6{line-height:36px;}
+h3{font-size:18px;}h3 small{font-size:14px;}
+h4{font-size:16px;}h4 small{font-size:12px;}
+h5{font-size:14px;}
+h6{font-size:13px;color:#bfbfbf;text-transform:uppercase;}
+ul,ol{margin:0 0 18px 25px;}
+ul ul,ul ol,ol ol,ol ul{margin-bottom:0;}
+ul{list-style:disc;}
+ol{list-style:decimal;}
+li{line-height:18px;color:#808080;}
+ul.unstyled{list-style:none;margin-left:0;}
+dl{margin-bottom:18px;}dl dt,dl dd{line-height:18px;}
+dl dt{font-weight:bold;}
+dl dd{margin-left:9px;}
+hr{margin:20px 0 19px;border:0;border-bottom:1px solid #eee;}
+strong{font-style:inherit;font-weight:bold;}
+em{font-style:italic;font-weight:inherit;line-height:inherit;}
+.muted{color:#bfbfbf;}
+blockquote{margin-bottom:18px;border-left:5px solid #eee;padding-left:15px;}blockquote p{font-size:14px;font-weight:300;line-height:18px;margin-bottom:0;}
+blockquote small{display:block;font-size:12px;font-weight:300;line-height:18px;color:#bfbfbf;}blockquote small:before{content:'\2014 \00A0';}
+address{display:block;line-height:18px;margin-bottom:18px;}
+code,pre{padding:0 3px 2px;font-family:Monaco, Andale Mono, Courier New, monospace;font-size:12px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+code{padding:1px 3px;}
+pre{background-color:#f5f5f5;display:block;padding:8.5px;margin:0 0 18px;line-height:18px;font-size:12px;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.15);-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;white-space:pre;white-space:pre-wrap;word-wrap:break-word;}
+form{margin-bottom:18px;}
+fieldset{margin-bottom:18px;padding-top:18px;}fieldset legend{display:block;padding-left:150px;font-size:19.5px;line-height:1;color:#404040;*padding:0 0 5px 145px;*line-height:1.5;}
+form .clearfix{margin-bottom:18px;zoom:1;}form .clearfix:before,form .clearfix:after{display:table;content:"";zoom:1;*display:inline;}
+form .clearfix:after{clear:both;}
+label,input,select,textarea{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:normal;}
+label{padding-top:6px;font-size:13px;line-height:18px;float:left;width:130px;text-align:right;color:#404040;}
+form .input{margin-left:150px;}
+input[type=checkbox],input[type=radio]{cursor:pointer;}
+input,textarea,select,.uneditable-input{display:inline-block;width:210px;height:18px;padding:4px;font-size:13px;line-height:18px;color:#808080;border:1px solid #ccc;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+input[type=checkbox],input[type=radio]{width:auto;height:auto;padding:0;margin:3px 0;*margin-top:0;line-height:normal;border:none;}
+input[type=file]{background-color:#ffffff;padding:initial;border:initial;line-height:initial;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+input[type=button],input[type=reset],input[type=submit]{width:auto;height:auto;}
+select,input[type=file]{height:27px;line-height:27px;*margin-top:4px;}
+select[multiple]{height:inherit;}
+textarea{height:auto;}
+.uneditable-input{background-color:#ffffff;display:block;border-color:#eee;-webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);-moz-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);cursor:not-allowed;}
+:-moz-placeholder{color:#bfbfbf;}
+::-webkit-input-placeholder{color:#bfbfbf;}
+input,textarea{-webkit-transition:border linear 0.2s,box-shadow linear 0.2s;-moz-transition:border linear 0.2s,box-shadow linear 0.2s;-ms-transition:border linear 0.2s,box-shadow linear 0.2s;-o-transition:border linear 0.2s,box-shadow linear 0.2s;transition:border linear 0.2s,box-shadow linear 0.2s;-webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);-moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);}
+input:focus,textarea:focus{outline:0;border-color:rgba(82, 168, 236, 0.8);-webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);-moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);}
+input[type=file]:focus,input[type=checkbox]:focus,select:focus{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;outline:1px dotted #666;}
+form div.clearfix.error{background:#fae5e3;padding:10px 0;margin:-10px 0 10px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}form div.clearfix.error>label,form div.clearfix.error span.help-inline,form div.clearfix.error span.help-block{color:#9d261d;}
+form div.clearfix.error input,form div.clearfix.error textarea{border-color:#c87872;-webkit-box-shadow:0 0 3px rgba(171, 41, 32, 0.25);-moz-box-shadow:0 0 3px rgba(171, 41, 32, 0.25);box-shadow:0 0 3px rgba(171, 41, 32, 0.25);}form div.clearfix.error input:focus,form div.clearfix.error textarea:focus{border-color:#b9554d;-webkit-box-shadow:0 0 6px rgba(171, 41, 32, 0.5);-moz-box-shadow:0 0 6px rgba(171, 41, 32, 0.5);box-shadow:0 0 6px rgba(171, 41, 32, 0.5);}
+form div.clearfix.error .input-prepend span.add-on,form div.clearfix.error .input-append span.add-on{background:#f4c8c5;border-color:#c87872;color:#b9554d;}
+table{width:100%;margin-bottom:18px;padding:0;border-collapse:separate;*border-collapse:collapse;font-size:13px;border:1px solid #ddd;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}table th,table td{padding:10px 10px 9px;line-height:18px;text-align:left;}
+table th{padding-top:9px;font-weight:bold;vertical-align:middle;border-bottom:1px solid #ddd;}
+table td{vertical-align:top;}
+table th+th,table td+td{border-left:1px solid #ddd;}
+table tr+tr td{border-top:1px solid #ddd;}
+table tbody tr:first-child td:first-child{-webkit-border-radius:4px 0 0 0;-moz-border-radius:4px 0 0 0;border-radius:4px 0 0 0;}
+table tbody tr:first-child td:last-child{-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0;border-radius:0 4px 0 0;}
+table tbody tr:last-child td:first-child{-webkit-border-radius:0 0 0 4px;-moz-border-radius:0 0 0 4px;border-radius:0 0 0 4px;}
+table tbody tr:last-child td:last-child{-webkit-border-radius:0 0 4px 0;-moz-border-radius:0 0 4px 0;border-radius:0 0 4px 0;}
+.zebra-striped tbody tr:nth-child(odd) td{background-color:#f9f9f9;}
+.zebra-striped tbody tr:hover td{background-color:#f5f5f5;}
+.zebra-striped .header{cursor:pointer;}.zebra-striped .header:after{content:"";float:right;margin-top:7px;border-width:0 4px 4px;border-style:solid;border-color:#000 transparent;visibility:hidden;}
+.zebra-striped .header:hover:after{visibility:visible;}
+footer{margin-top:17px;padding-top:17px;border-top:1px solid #eee;}
+.page-header{margin-bottom:17px;border-bottom:1px solid #ddd;-webkit-box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);-moz-box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);}.page-header h1{margin-bottom:8px;}
+.close{float:right;color:#000000;font-size:20px;font-weight:bold;line-height:13.5px;text-shadow:0 1px 0 #ffffff;filter:alpha(opacity=20);-khtml-opacity:0.2;-moz-opacity:0.2;opacity:0.2;}.close:hover{color:#000000;text-decoration:none;filter:alpha(opacity=40);-khtml-opacity:0.4;-moz-opacity:0.4;opacity:0.4;}
+
+pre {
+	padding: 0;
+	margin: 10px 0px 10px;
+	overflow: auto; /*--If the Code exceeds the width, a scrolling is available--*/
+	overflow-Y: hidden;  /*--Hides vertical scroll created by IE--*/
+}
+pre code {
+	margin: 5px;  /*--Left Margin--*/
+	padding: 0px;
+	display: block;
+    line-height: 18px;
+}
+.center { text-align:center}
+.left {text-align:left}
+.right {text-align:right}
+
+</style><style type="text/css">
+body {
+	font-family: "Geneva", Arial, sans-serif;
+	font-size: 13px;
+	margin: 10px;
+}
+
+a, a:visited {
+	color: #09c;
+}
+
+a:hover {
+	color: #336699;
+	text-decoration: none;
+}
+
+h1 {
+	margin: 0px 0px 10px;	
+	font-weight: bold;
+}
+
+h2 {
+	border-bottom: 2px dotted #ccc;
+	margin: 5px 0px 15px;	
+}
+
+h6 {
+	color: #09c;
+}
+
+blockquote {
+	font-family: "Georgia", Courier New, courier, sans-serif;
+	background: #efefef;
+	padding: 5px 10px;
+	border: solid 1px #ddd;
+	margin: 15px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	color:  #333;
+	
+}
+
+ul, ol {
+	margin-bottom: 15px;
+}
+
+li {
+	padding: 3px;
+}
+
+
+
+code {
+	background-color: #f1f1f1;
+    color: #336699;
+}
+
+pre {
+	background-color: #f1f1f1;
+}
+
+pre > code {
+	margin: 0px;
+	padding: 5px;
+	border: 0px;
+	background-color: #f1f1f1;
+}
+
+
+</style></head>
+<body>
+<h1 id="toc_0">Introduction to the Unix shell for Biologists</h1>
+
+<hr/>
+
+<h2 id="toc_1">R. Burke Squires</h2>
+
+<h2 id="toc_2">NIAID BCBB</h2>
+
+<p><img src="by.png" alt="CC-BY"/> </p>
+
+<p>This work adapted from <a href="Konrad%20F%C3%B6rstner">Konrad Förstner</a> and <a href="https://github.com/liux1299/Linux-NGS_Tutorial">Chaochih Liu</a> </p>
+
+<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+<h2 id="toc_3"></h2>
+
+<p>Outline:</p>
+
+<ol>
+<li>Setup</li>
+<li>Motivation and background</li>
+<li>Why GNU/Linux</li>
+<li>Basic anatomy of a command line call</li>
+<li>How to get help and documentation</li>
+<li>Bash keyboard shortcuts</li>
+<li>Files, folders, locations</li>
+<li>Manipulating files and folder</li>
+<li>File content - part 1</li>
+<li>File content - part 2</li>
+<li>Finding things in files</li>
+<li>Connecting tools</li>
+<li>Repeating command using the for loop</li>
+<li>Shell scripting</li>
+<li>Examples analysis</li>
+<li>Additional resources</li>
+</ol>
+
+<hr/>
+
+<h2 id="toc_4">Setup - Create and download some test files</h2>
+
+<p>Use the <code>Makefile</code> in this repo and run</p>
+
+<pre><code>$ make example_files
+</code></pre>
+
+<p>This should create folder <code>unix_course_files</code> thank contains several
+examples files.</p>
+
+<hr/>
+
+<h1 id="toc_5">Motivation and background</h1>
+
+<p>In this course you will learn the basics of how to use the Unix
+shell. Unix is a class of operating systems with many different
+flavors including well-known ones like GNU/Linux (Ubuntu, RedHat) and the BSDs. The
+development of Unix and its shell (also known as <strong>command line</strong>
+interface) dates back to the late 1960s. Still, their concepts lead to
+very powerful tools. In the command line you can easily combine
+different tools into pipelines, avoid repetitive work and make your
+workflow reproducible. Knowing how to use the shell will also enable
+you to run programs that are only developed for this environment which
+is the case for many bioinformatics tools.</p>
+
+<hr/>
+
+<h1 id="toc_6">Why GNU/Linux?</h1>
+
+<ul>
+<li>Software costs $0</li>
+<li>Advanced Multitasking</li>
+<li>Remote tasking (“real networking”)</li>
+<li>Multiuser</li>
+<li>Easy access to programming languages, databases, open-source projects</li>
+</ul>
+
+<hr/>
+
+<h1 id="toc_7">Why GNU/Linux?</h1>
+
+<ul>
+<li>Software freedoms
+
+<ul>
+<li>Free to use for any purpose</li>
+<li>Free to study and modify the source code</li>
+<li>Free to share</li>
+<li>Free to share modified versions</li>
+</ul></li>
+<li>No dependence on vendors</li>
+<li>Better performance</li>
+<li>More up-to-date</li>
+<li>Many more reasons…</li>
+</ul>
+
+<hr/>
+
+<h1 id="toc_8">Basics</h1>
+
+<h3 id="toc_9">Things to keep in mind throughout this tutorial</h3>
+
+<p>Remember the UNIX/LINUX command  line is case sensitive!</p>
+
+<p>All commands in this manual are printed in gray code boxes.</p>
+
+<p>Commands given in <span style="color:red">red</span> are considered more important for beginners than commands given in <span style="background-color:#F1F1F2"><span style="color:black">black</span></span>.</p>
+
+<p>The hash (pound) sign <code>#</code> indicates the start of comments for commands.</p>
+
+<p>The notation <code>&lt;…&gt;</code> refers to variables and file names that need to be specified by the user. The symbols <code>&lt;</code> and <code>&gt;</code> need to be excluded.</p>
+
+<hr/>
+
+<h1 id="toc_10">Logging-In</h1>
+
+<h3 id="toc_11">Mac or LINUX</h3>
+
+<p>To log-in to the remote Linux shell, open the terminal and type:</p>
+
+<pre><code>ssh &lt;your_username&gt;@&lt;host_name&gt;
+</code></pre>
+
+<p>Where <code>ssh</code> stands for secure shell and <code>host_name</code> is the remote server&#39;s domain name (i.e. login.msi.umn.edu). You will then be asked to enter your password, simply type it and press enter.</p>
+
+<p>The format you will use to log-in to <a href="https://biocompace.icermali.org/">BioCompACE</a>  is:</p>
+
+<pre><code>ssh biocompace.icermali.org
+</code></pre>
+
+<p>To reset your password please go <a href="https://password.icermali.org">here</a>.</p>
+
+<hr/>
+
+<h1 id="toc_12">The basic anatomy of a command line call</h1>
+
+<p>Running a tool in the command line interface follows a simple
+pattern. At first you have to write the name of the command (if it is
+not globally installed it&#39;s precise location needs to be given - we
+will get to this later). Some programs additionally require
+parameters. While the parameters are the requirement of the program
+the actual values we give are called arguments. There are two
+different ways how to pass those arguments to a program - via keywords
+parameter (also called named keywords, flags or options) or via
+positional parameters.  The common pattern looks like this (<code>&lt;&gt;</code>
+indicates obligatory items, <code>[]</code> indicates optional items):</p>
+
+<pre><code>&lt;program name&gt; [keyword parameters] [positional parameters]
+</code></pre>
+
+<p>An example is calling the program <code>ls</code> which <strong>l</strong>i<strong>s</strong>ts the content of a
+directory. You can simply call it without any argument</p>
+
+<pre><code>$ ls
+</code></pre>
+
+<p>or with one or more keyword argument</p>
+
+<pre><code>$ ls -l
+$ ls -lh
+</code></pre>
+
+<p>or with one or more positional arguments</p>
+
+<pre><code>$ ls test_folder
+</code></pre>
+
+<p>or with one or more keyword and positional arguments</p>
+
+<pre><code>$ ls -l test_folder
+</code></pre>
+
+<p>The result of a command is written usually to the so called <em>standard
+output</em> of the shell which is the screen shown to you. We will later
+learn how to redirect this e.g. to the <em>standard input</em> of another
+program.</p>
+
+<h1 id="toc_13">How to get help and documentation</h1>
+
+<p>Especially in the beginning you will have a lot of questions what a
+command does and which arguments and parameters need to be given. One
+rule before using a command or before asking somebody about it is
+called <a href="https://en.wikipedia.org/wiki/RTFM">RTFM</a> (please check the
+meaning yourself). Maybe the most important command is <code>man</code> which
+stands for <em>manual</em>. Most commands offer a manual and with <code>man</code> you
+can read those. To get the documentation of <code>ls</code> type</p>
+
+<pre><code>$ man ls
+</code></pre>
+
+<p>To close the manual use <code>q</code>. Additionally or alternatively many tools offer some help via the parameter <code>-h</code>, <code>-help</code> or <code>--help</code>. For example <code>ls</code>:</p>
+
+<pre><code>$ ls --help
+</code></pre>
+
+<p>Other tools present this help if they are called without any parameters or arguments.</p>
+
+<hr/>
+
+<h1 id="toc_14">Bash keyboard shortcuts</h1>
+
+<p>There are different implementations of the Unix shell. You are currently working with Bash (<strong>B</strong>ourne-<strong>a</strong>gain <strong>sh</strong>ell). Bash has several keyboard shortcuts that improve the interaction. Here is a small selection:</p>
+
+<ul>
+<li>Ctrl-c - Stop the command</li>
+<li>Ctlr-↑ - Go backward in command history</li>
+<li>Ctlr-↓ - Go forward in command history</li>
+<li>Ctrl-a - Jump to the beginning of a line</li>
+<li>Ctrl-e - Jump to the end of a line</li>
+<li>Ctrl-u - Remove everything before the cursor position</li>
+<li>Ctrl-k - Remove everything after the cursor position</li>
+<li>Ctrl-l - Clean the screen</li>
+<li>Ctrl-r - Search in command history</li>
+<li>Tab - extend commands and file/folder names</li>
+</ul>
+
+<hr/>
+
+<h1 id="toc_15">Files, folders, locations</h1>
+
+<p>Topics:</p>
+
+<ul>
+<li><code>ls</code></li>
+<li><code>pwd</code></li>
+<li><code>cd</code></li>
+<li><code>mkdir</code></li>
+<li>Relative vs. absolute path</li>
+<li><code>~/</code> </li>
+</ul>
+
+<p>In this part you will learn how to navigate through the file system,
+explore the content of folders and create folders.</p>
+
+<p>At first we need to know where we are. If you open a new terminal you
+should be in your home directory (we will explain this below). To test
+this, call the program <code>pwd</code> which stands for <strong>p</strong>rint <strong>w</strong>orking <strong>d</strong>irectory.</p>
+
+<pre><code>$ pwd
+/home/ubuntu
+</code></pre>
+
+<p>The default user of the Ubuntu live system is called <code>ubuntu</code>. In
+general each user has a folder with its user name located inside
+the folder <code>home</code>. The next command we need and which has been
+already mentioned above is <code>ls</code>. It simply lists the content of a
+folder. If you call it without any arguments it will output the content
+of the current folder. Using <code>ls</code> we want to get a rough overview of what
+a common Unix file system tree looks like and learn how to address
+files and folders. The root folder of a systems starts with <code>/</code>. Call</p>
+
+<pre><code>$ ls /
+</code></pre>
+
+<p>to see the content of the root folder. You should see something like</p>
+
+<pre><code>bin   data  etc  lib    lost+found  mnt  proc  run   srv  tmp  var
+boot  dev   home lib64  media   opt  root  sbin  sys  usr
+</code></pre>
+
+<p>There are several subfolders in the so-called root folder (and yes, to
+make it a little bit confusing there is even a folder called <code>root</code> in
+the root folder). Those are more important if you are the
+administrator of the system. Normal users do not have the permission to
+make changes here. Currently your home directory is your little
+universe in which you can do whatever you want. In here we will
+learn how work with paths. A file or folder can be addressed
+either with its <em>absolute</em> or <em>relative path</em>. As you have
+downloaded and decompressed the test data you should have a
+folder <code>unix_course_files</code> located in your home folder. Assuming you are in this
+folder (<code>/home/ubuntu/</code>) the relative path to the folder is simply
+<code>unix_course_files</code>. You can get the content of the folder listed by
+calling <code>ls</code> like this:</p>
+
+<pre><code>$ ls unix_course_files
+</code></pre>
+
+<p>This is the so called <em>relative path</em> as it is relative to the current work
+directory <code>/home/ubuntu/</code>. The <em>absolute path</em> would start with a <code>/</code>
+and is <code>/home/ubuntu/unix_course_files</code>. Call <code>ls</code> like this:</p>
+
+<pre><code>$ ls /home/ubuntu/unix_course_files
+</code></pre>
+
+<p>There are some conventions regarding <em>relative</em> and <em>absolute paths</em>. One
+is that a dot (<code>.</code>) represents the current folder. The command</p>
+
+<pre><code>$ ls ./
+</code></pre>
+
+<p>should return the same as simply calling</p>
+
+<pre><code>$ ls
+</code></pre>
+
+<p>Two dots (<code>..</code>) represent the parent folder. If you call</p>
+
+<pre><code>$ ls ../
+</code></pre>
+
+<p>you should see the content of <code>/home</code>. If you call</p>
+
+<pre><code>$ ls ../../
+</code></pre>
+
+<p>you should see the content of the parent folder of the parent folder which
+is the root folder (<code>/</code>) assuming you are in <code>/home/ubuntu/</code>. Another
+convention is that <code>~/</code> represents the home directory of the user. The
+command</p>
+
+<pre><code>$ ls ~/
+</code></pre>
+
+<p>should list the content of your home directory independent of your
+current location in the file system.</p>
+
+<p>Now as we know where we are and what is there we can start to change
+our location. For this we use the command <code>cd</code> (change directory). If
+you are in your home directory <code>/home/ubuntu/</code> you can go into the
+folder <code>unix_course_files</code> by typing</p>
+
+<pre><code>$ cd unix_course_files
+</code></pre>
+
+<p>After that call <code>pwd</code> to make sure that you are in the correct folder.</p>
+
+<pre><code>$ pwd 
+/home/ubuntu/unix_course_files
+</code></pre>
+
+<p>To go back into your home directory you have different options. Use
+the <em>absolute path</em></p>
+
+<pre><code>$ cd /home/ubuntu/
+</code></pre>
+
+<p>or the above mentioned convention for the home directory <code>~/</code>:</p>
+
+<pre><code>$ cd ~/
+</code></pre>
+
+<p>or the <em>relative path</em>, in this case the parent directory of<br/>
+<code>/home/ubuntu/unix_course_files</code>:</p>
+
+<pre><code>$ cd ../
+</code></pre>
+
+<p>As the home directory is such an important place <code>cd</code> uses this as
+default argument. This means if you call <code>cd</code> without argument you will
+go to the home directory. Test this behavior by calling</p>
+
+<pre><code>$ cd
+</code></pre>
+
+<p>Try now to go to different locations in the file system and list the
+files and folders located there.</p>
+
+<p>Now we will create our first folder using the command <code>mkdir</code> (<em>make
+directory</em>). Go into the home directory and type:</p>
+
+<pre><code>$ mkdir my_first_folder
+</code></pre>
+
+<p>Here we can discuss the implementation of another Unix philosophy: &quot;No
+news is good news.&quot; The command successfully created the folder
+<code>my_first_folder</code>. You can check this by calling <code>ls</code>, but <code>mkdir</code> did
+not tell you this. If you do not get a message this usually means
+everything went fine. If you call the above <code>mkdir</code> command again you
+should get an error message like this:</p>
+
+<pre><code>$ mkdir my_first_folder
+mkdir: cannot create directory ‘my_first_folder’: File exists
+</code></pre>
+
+<p>So if a command does not complain you can usually assume there was no
+error.</p>
+
+<hr/>
+
+<h1 id="toc_16">Manipulating files and folder</h1>
+
+<p>Topics:</p>
+
+<ul>
+<li><code>touch</code></li>
+<li><code>cp</code></li>
+<li><code>mv</code></li>
+<li><code>rm</code> </li>
+</ul>
+
+<h3 id="toc_17">touch</h3>
+
+<p>Next we want to manipulate files and folders. We create some dummy
+files using <code>touch</code> which is usually used to change the time stamps of
+files. But you can also create empty files with it easily. Let&#39;s
+create a file called <code>test_file_1.txt</code>:</p>
+
+<pre><code>$ touch test_file_1.txt
+</code></pre>
+
+<p>Use <code>ls</code> to check that it was created. </p>
+
+<h3 id="toc_18">cp</h3>
+
+<p>The command <code>cp</code> (<em>copy</em>) can be used to copy files. For this it
+requires at least two arguments: the source and the target file. In
+the following example we generate a copy of the file <code>test_file_1.txt</code>
+called <code>a_copy_of_test_file.txt</code>.</p>
+
+<pre><code>$ cp test_file_1.txt a_copy_of_test_file.txt
+</code></pre>
+
+<p>Use <code>ls</code> to confirm that this worked. We can also copy the file in the
+folder <code>my_first_folder</code> which we have created above:</p>
+
+<pre><code>$ cp test_file_1.txt my_first_folder
+</code></pre>
+
+<p>Now there should be also a file <code>test_file_1.txt</code> in the folder
+<code>my_first_folder</code>. If you want to copy a folder and its content you
+have to use the parameter <code>-r</code>.</p>
+
+<pre><code>$ cp -r my_first_folder a_copy_of_my_first_folder
+</code></pre>
+
+<p>You can use the command <code>mv</code> (<em>move</em>) to rename or relocate files
+or folders. To rename the file <code>a_copy_of_test_file.txt</code> to
+<code>test_file_with_new_name.txt</code> call</p>
+
+<h3 id="toc_19">mv</h3>
+
+<pre><code>$ mv a_copy_of_test_file.txt test_file_with_new_name.txt
+</code></pre>
+
+<p>With <code>mv</code> you can also move a file into a folder. For this the second
+argument has to be a folder. For example, to move the file now named
+<code>test_file_with_new_name.txt</code> into the folder <code>my_first_folder</code> use </p>
+
+<pre><code>$ mv test_file_with_new_name.txt my_first_folder
+</code></pre>
+
+<p>You are not limited to one file if you want to move them into a
+folder. Let&#39;s create and move two files <code>file1</code> and <code>file2</code> into the
+folder <code>my_first_folder</code>.</p>
+
+<pre><code>$ touch file1 file2 
+$ mv file1 file2 my_first_folder
+</code></pre>
+
+<p>At this point we can introduce another handy feature most shells offer
+which is called <em>globbing</em>. Let us assume you want to apply the same
+command to several files. Instead of explicitly writing all the file
+names you can use a <em>globbing pattern</em> to address them. There are
+different wildcards that can be used for these patterns. The most
+important one is the asterisk (<code>*</code>). It can replace none, one or more
+characters. Let us explore this with a small example:</p>
+
+<pre><code>$ touch file1.txt file2.txt file3
+$ ls *txt
+$ mv *txt my_first_folder
+</code></pre>
+
+<p>The <code>ls</code> shows the two files matching the given pattern
+(i.e. <code>file1.txt</code> and <code>file2.txt</code>) while dismissing the one not
+matching (i.e. <code>file3</code>). Same for <code>mv</code> - it will only move the two
+files ending with <code>txt</code>.</p>
+
+<h3 id="toc_20">rm</h3>
+
+<p>We accumulated several test files that we do not need anymore. Time to clean
+up a little bit. With the command <code>rm</code> (<em>remove</em>) you can delete files
+and folders. Please be aware that there is no such thing as a trash
+bin if you remove items this way. They will be gone for good and without further notice. </p>
+
+<p>To delete a file in <code>my_first_folder</code> call:</p>
+
+<pre><code>$ rm my_first_folder/file1.txt
+</code></pre>
+
+<p>To remove a folder use the parameter <code>-r</code> (<em>recursive</em>):</p>
+
+<pre><code>$ rm -r my_first_folder
+</code></pre>
+
+<p>Alternatively you can use the command <code>rmdir</code>:</p>
+
+<pre><code>$ rmdir my_first_folder
+</code></pre>
+
+<hr/>
+
+<h1 id="toc_21">Finding Files in Directories and Applications</h1>
+
+<h4 id="toc_22">Here are some important commands to know:</h4>
+
+<pre><code>find -name &quot;*pattern*&quot;            # searches for *pattern* in and below current directory
+find /usr/local -name &quot;*blast*&quot;   # finds file names *blast* in specified directory
+find /usr/local -iname &quot;*blast*&quot;  # Same as above, but case insensitive
+</code></pre>
+
+<h4 id="toc_23">Here are some additional useful arguments that would be good to know exist:</h4>
+
+<ul>
+<li><code>-user &lt;user name&gt;</code></li>
+<li><code>-group &lt;group name&gt;</code></li>
+<li><code>-ctime &lt;number of days ago changed&gt;</code></li>
+</ul>
+
+<pre><code>find ~ -type f -mtime -2        # finds all files you have modified in the last two days
+locate &lt;pattern&gt;                # finds files and directories that are written into update file
+which &lt;application_name&gt;        # location of application
+whereis &lt;application_name&gt;      # searches for executeables in set of directories
+dpkg -l | grep mypattern        # find Debian packages and refine search with grep pattern
+</code></pre>
+
+<h4 id="toc_24">Example of a <code>find</code> command we will be using frequently later on today</h4>
+
+<pre><code>find `pwd` -name &quot;filename&quot; | sort
+</code></pre>
+
+<hr/>
+
+<!-- background: #000100 -->
+
+<!-- color: #F1F1F2-->
+
+<!-- font: metronova -->
+
+<h1 id="toc_25">File content - part 1</h1>
+
+<p>Topics:</p>
+
+<ul>
+<li><code>less</code> / <code>more</code></li>
+<li><code>cat</code></li>
+<li><code>echo</code></li>
+<li><code>head</code></li>
+<li><code>tail</code></li>
+<li><code>cut</code></li>
+</ul>
+
+<p>Until now we did not care about the content of the files. This will
+change now. Please go into the folder <code>unix_course_files</code>:</p>
+
+<pre><code>$ cd unix_course_files
+</code></pre>
+
+<h3 id="toc_26">less/more</h3>
+
+<p>There should be some files waiting for you. To read the content with
+the possibility to scroll around we need a so called pager
+program. Most Unix systems offer the programs <code>more</code> and <code>less</code> which
+have very similar functionalities (&quot;more or less are more or less the
+same&quot;). We will use the later one here. Let&#39;s open the file
+<code>origin_of_species.txt</code></p>
+
+<pre><code>$ less origin_of_species.txt
+</code></pre>
+
+<h3 id="toc_27">cat</h3>
+
+<p>The file contains Charles Darwin&#39;s <em>Origin of species</em> in plain
+text. You can scroll up and down line-wise using the arrow keys or page-wise
+using the page-up/page-down keys. To quit use the key <code>q</code>. With
+pager programs you can read file content interactively, but sometimes
+you just want to have the content of a file given to you (i.e. on the
+<em>standard output</em>). The command <code>cat</code> (<em>concatenate</em>) does that for one
+or more files. Let us use it to see what is in the example file
+<code>two_lines.txt</code>. Assuming you are in the folder <code>unix_course_files</code>
+you can call</p>
+
+<pre><code>$ cat two_lines.txt
+</code></pre>
+
+<p>The content of the file is shown to you. You can apply the command to
+two files and the content is concatenated and returned:</p>
+
+<pre><code>$ cat two_lines.txt three_lines.txt
+</code></pre>
+
+<p>This is a good time to introduce the <em>standard input</em> and <em>standard output</em> and what you can do with it. Above I wrote the output is given to you. This means it is written to the so called <em>standard output</em>. You can redirect the <em>standard output</em> into a file by using <code>&gt;</code>. Let us use the call above to generate a new file that contains the combined content of both files:</p>
+
+<pre><code>$ cat two_lines.txt three_lines.txt &gt; five_lines.txt
+</code></pre>
+
+<p>Please have a look at the content of this file:</p>
+
+<pre><code>$ cat five_lines.txt
+</code></pre>
+
+<h3 id="toc_28">echo</h3>
+
+<p>The <em>standard output</em> can also be redirected to other tools as
+<em>standard input</em>. More about this below. With <code>cat</code> we can reuse the
+existing file content. To create something new we use the command
+<code>echo</code> which writes a given string to the standard output.</p>
+
+<pre><code>$ echo &quot;Something very creative&quot;
+</code></pre>
+
+<p>To redirect the output into a target file use <code>&gt;</code>.</p>
+
+<pre><code>$ echo &quot;Something very creative.&quot; &gt; creative.txt
+</code></pre>
+
+<p>Be aware that this can be dangerous. You will overwrite the content of an
+existing file. For example if you call now</p>
+
+<pre><code>$ echo &quot;Something very uncreative.&quot; &gt; creative.txt
+</code></pre>
+
+<p>there will be only the latest string written to the file and the
+previous one will be overwritten. To append the output of a command to a
+file without overwriting the content use <code>&gt;&gt;</code>.</p>
+
+<pre><code>$ echo &quot;Something very creative.&quot; &gt; creative.txt
+$ echo &quot;Something very uncreative.&quot; &gt;&gt; creative.txt
+</code></pre>
+
+<p>Now <code>creative.txt</code> should contain two lines.</p>
+
+<h3 id="toc_29">head \ tail</h3>
+
+<p>Sometimes you just want to get an excerpt of a file e.g. just the
+first or last lines of it. For this the commands <code>head</code> and <code>tail</code> can
+be used. Per default 10 lines are shown. You can use the parameter <code>-n
+&lt;NUMBER&gt;</code> (e.g. <code>-n 20</code> or just <code>-&lt;NUMBER&gt;</code> (e.g. <code>-20</code>) to specify the
+number of lines to be displayed. Test the tools with the file
+<code>origin_of_species.txt</code>:</p>
+
+<pre><code>$ head origin_of_species.txt
+$ tail origin_of_species.txt
+</code></pre>
+
+<h3 id="toc_30">cut</h3>
+
+<p>You cannot only select vertically but also horizontally using the
+command <code>cut</code>. Let us extract only the first 10 characters of each line
+in the file <code>origin_of_species.txt</code>:</p>
+
+<pre><code>$ cut -c 1-10 origin_of_species.txt
+</code></pre>
+
+<p>The tool <code>cut</code> can be very useful to extract certain columns from CSV
+files (<em>comma/character separated values</em>). Have a look at the content of the
+file <code>genes.csv</code>. You see that it contains different columns that are
+tabular-separated. You can extract selected columns with <code>cut</code>:</p>
+
+<pre><code>$ cut -f 1,4 genes.csv
+</code></pre>
+
+<hr/>
+
+<h1 id="toc_31">File content - part 2</h1>
+
+<h1 id="toc_32"></h1>
+
+<p>Topics:</p>
+
+<ul>
+<li><code>wc</code></li>
+<li><code>sort</code></li>
+<li><code>uniq</code></li>
+</ul>
+
+<h3 id="toc_33">wc</h3>
+
+<p>There are several tools that let you manipulate the content of a plain
+text file or return information about it. If you want for example some
+statistics about the number of character, words and lines use the
+command <code>wc</code>. Let us count the number of lines in the file
+<code>origin_of_species.txt</code>:</p>
+
+<pre><code>$ wc -l origin_of_species.txt
+</code></pre>
+
+<h3 id="toc_34">sort</h3>
+
+<p>You can use the command <code>sort</code> to sort a file alpha-numerically. Test
+the following calls</p>
+
+<pre><code>$ sort unsorted_numbers.txt
+$ sort -n unsorted_numbers.txt
+$ sort -rn unsorted_numbers.txt
+</code></pre>
+
+<p>and try to understand the output.</p>
+
+<h3 id="toc_35">uniq</h3>
+
+<p>The tool <code>uniq</code> takes a sorted list of lines and removes line-wise the
+redundancy. Please have a look at the content of the file
+<code>redundant.txt</code>. Then use <code>uniq</code> to generate a non-redundant list:</p>
+
+<pre><code>$ uniq redundant.txt
+</code></pre>
+
+<p>If you call <code>uniq</code> with <code>-c</code> you get the number of occurrence for each
+remaining entry:</p>
+
+<pre><code>$ uniq -c redundant.txt
+</code></pre>
+
+<hr/>
+
+<h2 id="toc_36">Finding Things in Files</h2>
+
+<h3 id="toc_37">Grep</h3>
+
+<p>* <code>grep</code> searches <strong>within files</strong> whereas <code>find</code> searches <strong>directories</strong></p>
+
+<pre><code>grep pattern file           # provides lines in &#39;file&#39; where pattern &#39;appears&#39;
+                            # if pattern is shell function use single quotes: &#39;&gt;&#39;
+
+grep -H pattern             # -H prints out file name in front of pattern
+
+grep &#39;pattern&#39; file | wc    # pipes lines with pattern into word count &#39;wc&#39;
+                            # wc arguments: 
+                            #   -c: show only bytes 
+                            #   -w: show only words
+                            #   -l: show only lines
+                            # help on regular expressions: 
+                            #   $ man 7 regex
+                            #   man perlre    
+</code></pre>
+
+<hr/>
+
+<p>With the tool <code>grep</code> you can extract lines that match a given
+pattern. For instance, if you want to find all lines in
+<code>origin_of_species.txt</code> that contain the word <code>species</code> call</p>
+
+<pre><code>$ grep species origin_of_species.txt
+</code></pre>
+
+<p>As you can see we only get the lines that contain <code>species</code> but not
+the ones that contain <code>Species</code>. To make the search case-insensitive
+use the parameter <code>-i</code>.</p>
+
+<pre><code>$ grep -i species origin_of_species.txt
+</code></pre>
+
+<p>If you are only interested in the number of lines that match the pattern
+use <code>-c</code>:</p>
+
+<pre><code>$ grep -ic species origin_of_species.txt
+</code></pre>
+
+<hr/>
+
+<h1 id="toc_38">Connecting tools</h1>
+
+<p>Another piece of the Unix philosophy is to build small tools that do
+one thing optimally and use the standard input and standard
+output. The real power of Unix builds on the capability to easily
+connect tools. For this so-called <em>pipes</em> are used. To use the
+<em>standard output</em> of one tool as <em>standard input</em> of another tool the
+vertical bar <code>|</code> is used. For example, in order to extract the first
+1000 lines from <code>origin_of_species.txt</code>, search for lines that contain
+<code>species</code>, then search in those lines the ones which contain <code>wild</code>
+and finally replace the <code>w</code>s by <code>m</code>s call (Please write this in one line
+in the shell and remove the <code>\</code>):</p>
+
+<h2 id="toc_39">Redirections</h2>
+
+<p>Before we jump into redirections, I would like to review wildcards.</p>
+
+<p>Wildcards are denoted by * and it is used to specify many files (I&#39;ll discuss more details about this later and show an example).</p>
+
+<p>A few examples of formats are:</p>
+
+<ul>
+<li>&lt;beginning-of-filename&gt;*</li>
+<li>*&lt;end-of-filename&gt;</li>
+<li>*&lt;middle-of-filename&gt;*</li>
+</ul>
+
+<p>Now, we&#39;ll go back to redirections.</p>
+
+<p>The following commands are redirections:</p>
+
+<pre><code>ls &gt; file               # stores ls output into specified file
+command &lt; my_file       # uses file after &#39;&lt;&#39; as STDIN
+command &gt;&gt; my_file      # appends output of one command to file (will not overwrite file with same filename)
+command | tee my_file   # writes STDOUT to file and print to screen
+command &gt; my_file; cat my_file  # writes STDOUT to file, 
+                                # then prints it to screen
+                                # semi-colon designates end of command
+grep my_pattern my_file | wc    # Pipes (|) output of &#39;grep&#39; to &#39;wc&#39;
+</code></pre>
+
+<hr/>
+
+<h2 id="toc_40">Piping</h2>
+
+<p>Piping is another form of redirects.</p>
+
+<p>It is a way to chain commands together</p>
+
+<ul>
+<li>Can take the STDOUT of one command and send it to STDIN of another</li>
+<li>Denoted by <code>|</code> symbol </li>
+</ul>
+
+<p>Example:</p>
+
+<pre><code>find `pwd` -name &quot;name_of_file&quot; | sort
+
+head -n 1000 origin_of_species.txt | grep species | grep wild | tr w m
+</code></pre>
+
+<hr/>
+
+<h2 id="toc_41">Repeating command using the <code>for</code> loop</h2>
+
+<p>Assuming you want to generate a copy of each of your files ending with ´.txt´. A</p>
+
+<pre><code>cp *txt copy_of_*txt
+</code></pre>
+
+<p>would not work.</p>
+
+<p>With <code>for</code> loops you can solve this problem. Let&#39;s start with a simple
+one. </p>
+
+<pre><code>for FILE in three_lines.txt two_lines.txt
+&gt; do
+&gt; head -n 1 $FILE
+&gt; done
+</code></pre>
+
+<p>The variable <code>FILE</code> (you can give it also any other name) can be used
+inside of the loop.</p>
+
+<p>If you press now Ctr-↑ you will get the line</p>
+
+<pre><code>for FILE in three_lines.txt two_lines.txt; do head -n 1 $FILE; done
+</code></pre>
+
+<p>which is equivalent to the call before. You can not only call one
+command inside of a loop but several:</p>
+
+<pre><code>for FILE in three_lines.txt two_lines.txt
+&gt; do
+&gt; head -n 1 $FILE
+&gt; echo &quot;-----------------&quot;
+&gt; done
+</code></pre>
+
+<pre><code>for FILE in *txt
+&gt; do
+&gt; head -n 1 $FILE
+&gt; echo &quot;-----------------&quot;
+&gt; done
+</code></pre>
+
+<pre><code>for FILE in *txt
+&gt; do
+&gt; cp $FILE copy_of_$FILE
+&gt; done
+</code></pre>
+
+<hr/>
+
+<h1 id="toc_42">Shell scripting</h1>
+
+<p>Open a new file in a text editor of you choice, call it
+<code>count_lines.sh</code> and add the following text:</p>
+
+<pre><code>#!/bin/bash
+# count_lines.sh
+echo &quot;Number of lines in the given file&quot;:
+wc -l origin_of_species.txt
+</code></pre>
+
+<p>Save the file, make sure the file <code>origin_of_species.txt</code> is in the
+same folder and run it the script:</p>
+
+<pre><code>$ bash count_lines.sh
+</code></pre>
+
+<p>You should get someting like</p>
+
+<pre><code>Number of lines that contains species:
+15322 origin_of_species.txt
+</code></pre>
+
+<p>This a very first shell script. Now we want to make it more
+flexible. Instead of hard coding the input file for <code>wc -l</code> we want to
+be able to give this as argument to the shell script. For this we
+change the shell script to:</p>
+
+<pre><code>echo &quot;Number of lines in the given file&quot;:
+wc -l $1
+</code></pre>
+
+<p>The <code>$1</code> is a varible that represents the first argument given to the
+shell scrip. Now you can call the script in the following way</p>
+
+<pre><code>$ bash count_lines.sh origin_of_species.txt
+</code></pre>
+
+<p>You should get the same results as before. If you also like to take
+the second argument use the variable <code>$2</code>. For using all arguments
+given to the shell script use the variable &quot;$@&quot;. E.g change the shell
+script to:</p>
+
+<pre><code>echo &quot;Number of lines in the given file(s)&quot;:
+wc -l $@
+</code></pre>
+
+<p>and run it with several input files:</p>
+
+<pre><code>bash count_lines.sh origin_of_species.txt genes.csv
+</code></pre>
+
+<p>You should get something like:</p>
+
+<pre><code>Number of lines that contains species:
+ 15322 origin_of_species.txt
+     5 genes.csv
+ 15327 total
+</code></pre>
+
+<h2 id="toc_43">If/then Statements</h2>
+
+<p>Different lines of code can be executed depending on whether or not something tests true or not.</p>
+
+<pre><code>#   The condition is whether or not SAMTools is installed
+#   If SAMTools is installed, &#39;THEN&#39; indexes the fasta file
+#   &#39;ELSE&#39; tells us that SAMTools is not installed
+
+if `command -v samtools &gt; /dev/null 2&gt; /dev/null`
+then
+    echo &quot;SAMTools is installed&quot;
+    samtools my_sequence_data.fasta reference.fasta
+else
+    echo &quot;SAMTools is not installed&quot;
+fi
+</code></pre>
+
+<hr/>
+
+<h1 id="toc_44">Examples analysis</h1>
+
+<p>Equipped with a fine selection of useful programs and basic
+understanding of how to combine them, we will no apply them to analyze
+real biological data.</p>
+
+<h2 id="toc_45">Retrieving data</h2>
+
+<p>You have used the tool <code>wget</code> above to download the example files. It is
+very useful, especially, if you want to retrieve large data sets. We
+download the fasta file of the <em>Salmonella</em> Thyphimuirum SL1344
+chromosome by calling (in this document the URL is split into three
+lines. Please write it in one line in the shell and remove the <code>\</code>).</p>
+
+<pre><code>$ wget ftp://ftp.ncbi.nlm.nih.gov/genomes/archive/old_refseq/Bacteria/\
+Salmonella_enterica_serovar_Typhimurium_SL1344_uid86645/\
+NC_016810.fna
+</code></pre>
+
+<p>Additionally, we download the annotation in GFF format of the same replicon:</p>
+
+<pre><code>$ wget ftp://ftp.ncbi.nlm.nih.gov/genomes/archive/old_refseq/Bacteria/\
+Salmonella_enterica_serovar_Typhimurium_SL1344_uid86645/\
+NC_016810.gff
+</code></pre>
+
+<h2 id="toc_46">Counting the number of features</h2>
+
+<p>Use <code>less</code> to have a look at <code>NC_016810.gff</code>. It is a tabular-separated
+file. The first 5 lines start with <code>#</code> and are called
+header. Then several lines with 9 columns follow. The third column
+contains the type of the entry (gene, CDS, tRNA, rRNA, etc). If we
+want to know the numbers of tRNA entries we could try to apply <code>grep</code>
+and use <code>-c</code> to count the number of matching lines.</p>
+
+<pre><code>$ grep -c tRNA NC_016810.gff
+</code></pre>
+
+<p>This leads to a suspiciously large number. The issue is that the
+string <code>tRNA</code> also occurs in the attribute column (the 9th
+column). We just want to select lines with a match in the third column.
+This can be achieved by combining <code>cut</code> and <code>grep</code>. </p>
+
+<pre><code>$ cut -f 3 NC_016810.gff | grep -c tRNA
+</code></pre>
+
+<p>To get the number of entries for all other features we could just
+replace the <code>tRNA</code> e.g. by <code>rRNA</code>. But we can also get the number for
+all of them at once using this constellation:</p>
+
+<pre><code>$ grep -v &quot;#&quot; NC_016810.gff | cut -f 3 | sort | uniq -c
+</code></pre>
+
+<p>Try to understand what we did here. You can use a similar call to
+count the number genes on the plus and minus strand:</p>
+
+<pre><code>$ cut -f 3,7 NC_016810.gff | grep gene | sort | uniq -c
+</code></pre>
+
+<hr/>
+
+<h1 id="toc_47">Additional Resources</h1>
+
+<ul>
+<li>A number of UNIX shell cheatsheets can be found <a href="https://www.cyberciti.biz/tips/linux-unix-commands-cheat-sheets.html">here</a></li>
+<li><a href="https://learnxinyminutes.com/docs/bash/">Learn bash in Y minutes</a></li>
+<li><a href="http://linuxcommand.org/lc3_learning_the_shell.php">Learning the Shell</a></li>
+<li><a href="http://linuxcommand.org/lc3_writing_shell_scripts.php">Writing Shell Scripts</a></li>
+<li><a href="https://www.shellscript.sh">Shell Scripting Tutorial</a></li>
+<li><a href="https://github.com/heikkil/unix-for-biologists">Unix for Biologits</a></li>
+</ul>
+
+</body>
+</html>
